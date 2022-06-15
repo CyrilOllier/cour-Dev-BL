@@ -70,4 +70,9 @@
         function somme2(uint[] calldata monTablleau2) external {
 
         }
+        // même choses que les precedents mais en retournant un tableau
+        function somme(uint[] memory monTablleau) public returns(uint[] memory){
+
+        }
+
     }
