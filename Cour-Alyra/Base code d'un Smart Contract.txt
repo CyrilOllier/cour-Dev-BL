@@ -1,0 +1,14 @@
+pragma solidity >=0.8.0 <0.8.9;
+contract NomDuSmartContrat { 
+    uint integer = 100; // declaration variable d'etat appelé "integer" d'une valeur fixé a 100 et sera stocké de manière permanente dans la Blockchain
+} 
+
+exo hello word 
+moi :
+pragma solidity >=0.8.0 <0.8.9;
+contract HelloWorld {
+     string myString = "Hello World !" ;
+      }
+
+correction : 100% ok
+
