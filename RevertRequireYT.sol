@@ -2,7 +2,7 @@
         
 pragma solidity 0.8.13;
 
-contract RevertRequireAssertYT {
+contract RevertRequireYT {
     //echanger les parties en commentaire pour passé de l'une des façon a l'autre et inverssement
     uint nombre;
 
