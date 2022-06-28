@@ -41,14 +41,24 @@
             return nombreX2;
         }
 
-      
+        //function qui crée un tableau dans une function (qui sera du coup memory) et qui multiplie les valeur du premier tableau par 2
+        function getNombreX1() public view returns(uint[] memory){
+            uint longueur = nombre.length;
+            uint[] memory nombrex1 = new uint[](longueur);
+            for(uint i = 0; i < longueur ; i++){
+                nombrex1[i] = nombre[i] ;
+            }
+            return nombrex1;
+        }
+
         
-        function triCroissant() public view returns(uint[] memory){  
+        
+        function TriCroissant() public view returns(uint[] memory){  
             uint taille = nombre.length;
-            uint[] memory triCroissant = new uint[](taille);  
-            for (uint i = 0; i < taille-2 ; i++)
+            uint[] memory triCroissant = nombre;  
+            for (uint i = 0; i <= taille-2 ; i++)
 						{							
-							for (uint j = i+1 ; j < taille-1 ; j++)
+							for (uint j = i+1 ; j <= taille-1 ; j++)
 							{
 								if (triCroissant[i] > triCroissant[j])
 								{
@@ -71,7 +81,7 @@
 
         }
         // même choses que les precedents mais en retournant un tableau
-        function somme(uint[] memory monTablleau) public returns(uint[] memory){
+        function somme3(uint[] memory monTablleau) public returns(uint[] memory){
 
         }
 
