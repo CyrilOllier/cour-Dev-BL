@@ -20,10 +20,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Voting is Ownable {
 
     uint public winningProposalID;
-    // ajout demander par truffle react
-    //uint256 value = 2 ;
-    //fin d'ajout */
-
+    
     struct Voter {
         bool isRegistered;
         bool hasVoted;
@@ -59,18 +56,7 @@ contract Voting is Ownable {
         _;
     }
     
-    //ajout de function demander par truffle react pour faire fonctionné la demo
-    /*function read() public view returns(uint256){
-        return value;
-    }*/
-    /**function write(uint256 newValue) public {
-        value = newValue;
-    }
-    //fin de code pour la demo truffle */
-
-
-    // on peut faire un modifier pour les états
-
+    
     // ::::::::::::: GETTERS ::::::::::::: //
 
     /// @return : voters[_addr] l'adresse d'un voteur uniquement a l'administrateur
