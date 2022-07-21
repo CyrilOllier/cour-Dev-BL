@@ -10,14 +10,16 @@ module.exports = {
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
      },  
+     rinkeby:{
+      provider : function() {return new HDWalletProvider({mnemonic:{phrase:`${process.env.MNEMONIC}`},providerOrUrl:`https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`})},
+      network_id:4,
+    },
      ropsten:{
-      provider : function() {return new HDWalletProvider({
-        mnemonic:{phrase:`${process.env.MNEMONIC}`},
-        providerOrUrl:`https://ropsten.infura.io/v3/${process.env.INFURA_ID}`,
+      provider : function() {return new HDWalletProvider({mnemonic:{phrase:`${process.env.MNEMONIC}`},providerOrUrl:`https://ropsten.infura.io/v3/${process.env.INFURA_ID}`,
         addressIndex: 0,
       })},
       network_id:3,
-    },
+    },    
     kovan:{
       provider : function() {return new HDWalletProvider({mnemonic:{phrase:`${process.env.MNEMONIC}`},providerOrUrl:`https://kovan.infura.io/v3/${process.env.INFURA_ID}`})},
       network_id:42,

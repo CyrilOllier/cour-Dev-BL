@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 
     /**
-    @title ModifierYT
+    @title OwnerImportYT
     @author Name    : Cyril OLLIER
     @author Website : http://www.Lab-Net.fr
     @author Contact : admin@lab-net.fr 
 
     
-    @notice FR: Le contrat Modifier explique comment utiliser et fonctionne les modifier dans un contract
+    @notice FR: Le contrat OwnerImport base d'un contract Owner pour importation avec Cour YT
     */
 
 
